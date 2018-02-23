@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <title>Lyrics</title>
+    <link rel="icon" type="image/png" href="dist/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/dist/css/styles.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+            <div><a href="{{site.baseurl}}/index.html">home</a>
+            <main  id="main-content">
+
+                {{ content }}
+            </main>
+        </div>
+    </div>
+
+
+    <script src="{{'/dist/js' | prepend: site.baseurl}}/transpose.min.js"></script>
+</body>
+
+</html>

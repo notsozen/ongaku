@@ -1,0 +1,37 @@
+{
+  "name": "Music",
+  "version": "1.0.0",
+  "description": "Music",
+  "main": "server.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "child_process": "^1.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.6.5",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^5.0.0",
+    "jquery": "^3.3.1",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
+    "sass-toolkit": "^2.10.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "simple-jekyll-search": "^1.5.0"
+  }
+}

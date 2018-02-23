@@ -1,0 +1,19 @@
+title: Kakudo
+description: >
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github: https://github.ibm.com/WH-Imaging/component-library-jekyll
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - gulpfile.js
+  - package.json
+
+#not sure if it'll help. Code I push doesn't reflect on the site for awhile
+future: true

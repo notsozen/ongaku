@@ -1,0 +1,16 @@
+---
+layout: null
+---
+[
+  {% for page in site.pages %}
+
+    {
+      "title"    : "{{ page.title | escape }}",
+      "author"   : "{{ page.author }}",
+      "url"      : "{{ site.baseurl }}{{ page.permalink }}",
+      "genre"     : "{{ page.genre }}"
+
+    } {% unless forloop.last %},{% endunless %}
+
+  {% endfor %}
+]

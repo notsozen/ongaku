@@ -1,0 +1,35 @@
+ {% assign sorted_pages = site.pages | sort: 'title' %} {% assign sorted_version = site.pages | sort: 'version' %}
+<div class="container musiclist">
+    <div class="row">
+        <div class="col">
+            <ul>
+                <li class="menu-block-title">By song name</li>
+                <li>
+                    <ul class="menu-block">
+                        {% for p in sorted_pages %} {% assign page_urls = page.url | split: '/' %} {% capture p_orig_url %}/lyrics/{{ page_urls[2] }}{% endcapture %} {% if p.type == "lyrics" %}
+                        <li class="{% if p.url == p_orig_url %}active{% endif %}">
+                            <a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }} - {{ p.version }}</a>
+                        </li>
+                        {% endif %} {% endfor %}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li class="menu-block-title">By Author</li>
+                <li>
+                    <ul class="menu-block">
+                        {% for p in sorted_version %} {% assign page_urls = page.url | split: '/' %} {% capture p_orig_url %}/lyrics/{{ page_urls[2] }}{% endcapture %} {% if p.type == "lyrics" %}
+                        <li class="{% if p.url == p_orig_url %}active{% endif %}">
+                            <a href="{{ p.url | prepend: site.baseurl }}">
+
+                    {{ p.version }} - {{ p.title }}</a>
+                        </li>
+                        {% endif %} {% endfor %}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

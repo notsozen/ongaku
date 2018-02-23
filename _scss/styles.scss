@@ -1,0 +1,126 @@
+@import 'bootstrap-grid';
+@import 'fonts';
+@import 'reset';
+html,
+body {
+    font-family: 'Roboto', Arial, Times;
+    color: #000;
+    font-size: 0.9rem;
+}
+.header{
+    position:relative;
+    border:1px solid red;
+}
+.musiclist{
+    margin-top:12rem;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+pre {
+    font-size: 1.2rem;
+    font-family: Roboto Mono, monospace;
+}
+
+.title {
+    text-transform: capitalize;
+    margin-top: 4rem;
+}
+
+pre span {
+
+    color: #B82F34FF;
+}
+
+a,
+a:hover,
+a:visited {
+    color: #666;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.container {
+    //border:1px solid red;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 1rem;
+    width: 20rem;
+
+    padding: 1rem .6rem 1.5rem;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+#menu>ul {}
+
+.menu-block li {
+
+    text-transform: capitalize;
+    border-left: 2px solid grey;
+
+    a {
+        text-decoration: none;
+        padding: .4rem;
+        display: block;
+
+
+        &:hover {
+            background-color: #D4DCE1FF;
+        }
+    }
+}
+.author{
+    margin:0.92rem 0;
+    text-transform: capitalize;
+}
+.menu-block-title {
+    font-size: 1.1rem;
+    padding: .4rem 0;
+}
+
+#search-container {
+    position: absolute;
+    top: 1.9rem;
+    right: 2rem;
+    z-index: 3;
+}
+
+#search-input {
+    width: 18rem;
+    height: 2rem;
+    padding: .4rem;
+}
+
+#results-container {
+    width: 18rem;
+    border-left: 2px solid gray;
+    //padding-top:.7rem;
+
+
+    background: #fff;
+    li {
+        text-transform: capitalize;
+
+        a {
+            text-decoration: none;
+            padding: .4rem;
+            display: block;
+
+
+            &:hover {
+                background-color:#D4DCE1FF;
+            }
+        }
+        &:first-child{
+            padding-top:.9rem;
+        }
+    }
+}

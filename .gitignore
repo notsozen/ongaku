@@ -1,0 +1,19 @@
+# osx
+.DS_Store
+
+# node
+node_modules
+
+# jekyll
+_site
+.sass-cache
+.jekyll-metadata
+
+# carlos testing files - do not delete
+
+test*
+_test*
+/_scss/test.scss
+dist/css/test.min.css
+old
+
